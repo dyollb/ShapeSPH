@@ -111,7 +111,7 @@ void SemiNaiveReducedX(double *data,
 		       double *cos_pml_table, 
 		       double *cos_even)
 {
-  register int i, j ;
+  int i, j ;
 
   double *cos_odd;
   double eresult0, eresult1, eresult2, eresult3;

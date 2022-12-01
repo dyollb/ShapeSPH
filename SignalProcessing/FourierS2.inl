@@ -159,7 +159,6 @@ void HarmonicTransform<Real>::ScratchSpace::resize( const int& b )
 {
 	if( b!=bw )
 	{
-		int size=b*2;
 		if(workSpace)				{delete[] workSpace;}
 		if(resultSpace)				{delete[] resultSpace;}
 		if(transposeResultSpace)	{delete[] transposeResultSpace;}
