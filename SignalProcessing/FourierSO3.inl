@@ -208,7 +208,7 @@ void WignerDTransform<Real>::resize(const int& resolution){ scratch.resize(resol
 template< class Real >
 int WignerDTransform<Real>::InverseFourier(FourierKeySO3<Real>& key,RotationGrid<Real>& g){
 	if( key.resolution()!=g.resolution() ) g.resize(key.resolution());
-	int bw=key.bandWidth() , sz=g.resolution();
+	int bw=key.bandWidth();
 	scratch.resize( bw );
 	int m , h , idx=0;
 	double n,temp;

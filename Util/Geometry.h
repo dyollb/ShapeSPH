@@ -298,7 +298,7 @@ public:
     Point3D( void ) : Point<Real,3>(){;}
     Point3D( const Point< Real , 3 >& p) { memcpy( coords , p.coords , sizeof(Real)*3 ); }
     Point3D( Real v1 , Real v2 , Real v3 ) { coords[0] = v1 , coords[1] = v2 , coords[2] = v3; }
-    Point3D( const Real *p ){ memcpy( coords , p.coords , sizeof(Real)*3 ); }
+    Point3D( const Real *p ){ memcpy( coords , p, sizeof(Real)*3 ); }
 
     static Point3D CrossProduct( const Point3D& p1 , const Point3D & p2 );
 };

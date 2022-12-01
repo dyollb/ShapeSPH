@@ -112,7 +112,7 @@ template< class Real > void FourierKey2D< Real >::clear( void ){ if(bw) memset( 
 template< class Real >
 void FourierKey2D< Real >::Add( const FourierKey2D< Real >& key )
 {
-	for( int i=-std::max< int >( start() , key.start() ) ; i<=std::min< int >( end , key.end() ) ; i++ ) for( int j=0 ; j<=std::min< int >( end() , key.end() ) ; j++ ) (*this)(i,j) += key(i,j);
+	for( int i=-std::max< int >( start() , key.start() ) ; i<=std::min< int >( end() , key.end() ) ; i++ ) for( int j=0 ; j<=std::min< int >( end() , key.end() ) ; j++ ) (*this)(i,j) += key(i,j);
 }
 template< class Real >
 void FourierKey2D< Real >::Scale( Real s )

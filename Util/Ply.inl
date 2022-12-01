@@ -379,7 +379,6 @@ int PlyReadPoints(char* fileName,
 	int num_elems;
 	int nr_props;
 	PlyProperty** plist;
-	PlyFace ply_face;
 
 	ply = ply_open_for_reading(fileName, &nr_elems, &elist, &file_type, &version);
 	if(!ply) return 0;
